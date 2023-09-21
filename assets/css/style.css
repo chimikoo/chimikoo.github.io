@@ -49,7 +49,7 @@ li {
 }
 
 #particles-js {
-  background-color: #dddddd;
+  background-color: #e2a7a7;
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -91,14 +91,14 @@ li {
   align-items: center;
   grid-template-columns: repeat(autofill, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  background: rgb(221, 221, 221);
-  background: linear-gradient(
+  background: rgb(199, 214, 228)
+/*   background: linear-gradient(
     180deg,
     rgb(221, 221, 221) 10%,
     rgb(6, 127, 241) 25%,
     rgb(6, 127, 241) 50%,
     rgb(221, 221, 221) 100%
-  );
+  ); */
 }
 
 .grid1 {
