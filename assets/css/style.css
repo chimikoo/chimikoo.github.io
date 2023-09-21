@@ -4,18 +4,29 @@
   margin: 0;
 }
 
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
 .nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1.7rem 10%;
   height: 6.5rem;
-  background-color: #fff;
+  background-color: whitesmoke;
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
 }
 
 ul {
     display: flex;
+    gap: 2rem;
+}
+
+.nav a {
+    text-decoration: none;
+    color: rgb(64, 64, 248);
+    font-weight: bold;
 }
 
 li {
@@ -25,14 +36,22 @@ li {
 .main-container {
   display: flex;
   margin: auto;
-  border: 2px black solid;
   width: 100%;
 }
 
 .intro-container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 1fr)
+    grid-template-rows: repeat(12, 1fr);
+}
+
+#particles-js {
+    background-color: #dddddd;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
 }
 
 .intro-container p {
@@ -54,4 +73,19 @@ li {
     font-size: 42px;
     justify-content: space-evenly;
     gap: 1.5rem
+}
+
+.about-me-container {
+    padding: 1rem;
+    display: flex;
+    gap: 3rem;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me-container img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
 }
