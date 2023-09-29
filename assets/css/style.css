@@ -98,7 +98,7 @@ li {
   position: relative;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(9, 1fr);
+  grid-template-rows: repeat(8, 1fr);
 }
 
 #particles-js {
@@ -115,20 +115,20 @@ li {
 
 .intro-container p {
   grid-column: 5 / span 6;
-  grid-row: 5 / span 3;
+  grid-row: 4 / span 3;
   font-size: var(--font-p);
 }
 
 .intro-container h1 {
   grid-column: 2 / span 3;
-  grid-row: 3;
+  grid-row: 2;
   font-size: 30px;
   color: #e3e3e3;
 }
 
 .socials {
-  grid-column: 12;
-  grid-row: 9;
+  grid-column: 11 / 12;
+  grid-row: 7;
   padding-right: 1rem;
 }
 
@@ -356,6 +356,8 @@ button:hover {
 
 /* test */
 
+
+
 @media only screen and (max-width: 700px) {
   #particles-js {
     display: none;
@@ -446,6 +448,11 @@ button:hover {
   .tech-list h2 {
     font-size: var(--mobile-font-size-h);
   }
+  
+  .tech {
+    flex-basis: 40%;
+    box-sizing: border-box;
+  }
 
   .tech img {
     width: 5rem;
@@ -461,16 +468,6 @@ button:hover {
 
   .card-container {
     flex-direction: column;
-  }
-
-  @media only screen and (max-width: 600px) {
-    .tech-list {
-      display: flex;
-    }
-  
-    .tech {
-      flex-basis: 33.33%;
-    }
   }
 
 }
@@ -500,6 +497,10 @@ button:hover {
     grid-column: 10 / 13;
     grid-row: 4;
     justify-self: end;
+  }
+
+  .tech-list {
+    justify-content: center;
   }
 }
 
