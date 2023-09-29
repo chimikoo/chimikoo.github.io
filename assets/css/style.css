@@ -7,8 +7,10 @@
   --font-p: 1.3rem;
   --font-h2: 2.5rem;
   --border-color: #8b8b8b;
-  --mobile-font-size-h: 32px;
+  --mobile-font-size-h: 24px;
   --mobile-font-size-p: 18px;
+  --pad-font-size-h: 24px;
+  --pad-font-size-p: 20px;
 }
 
 * {
@@ -87,7 +89,6 @@ li {
 
 /* intro start */
 .main-container {
-  display: flex;
   margin: auto;
   width: 100%;
   height: 50%;
@@ -135,7 +136,6 @@ li {
   font-size: 42px;
   justify-content: space-evenly;
   gap: 1.5rem;
-  margin-right: 5rem;
 }
 
 .social-icons a {
@@ -356,7 +356,7 @@ button:hover {
 
 /* test */
 
-@media (max-width: 375px) {
+@media only screen and (max-width: 700px) {
   #particles-js {
     display: none;
   }
@@ -389,6 +389,7 @@ button:hover {
 
   /* Intro Start */
   .intro-container {
+    position: static;
     display: flex;
     flex-direction: column;
     padding: 2rem 2rem 2rem 1rem;
@@ -461,12 +462,85 @@ button:hover {
   .card-container {
     flex-direction: column;
   }
-}
 
-@media (max-width: 768px) {
-
-  #particles-js {
-    display: none;
+  @media only screen and (max-width: 600px) {
+    .tech-list {
+      display: flex;
+    }
+  
+    .tech {
+      flex-basis: 33.33%;
+    }
   }
 
 }
+
+@media only screen and (max-width: 1000px) and (min-width: 701px) {
+  .intro-container {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .intro-container h1 {
+    grid-column: 1 / 7;
+    grid-row: 1;
+    font-size: var(--pad-font-size-h);
+    color: #e3e3e3;
+    padding: 1rem;
+  }
+
+  .intro-container p {
+    grid-column: 1 / 10;
+    grid-row: 2 / 4;
+    font-size: var(--pad-font-size-p);
+    padding: 1rem;
+  }
+
+  .socials {
+    grid-column: 10 / 13;
+    grid-row: 4;
+    justify-self: end;
+  }
+}
+
+
+@media only screen and (max-width: 1575px) and (min-width: 1001px) {
+  #particles-js {
+    position: absolute;
+    background-color: var(--bg-a);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  .intro-container {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+
+  .intro-container h1 {
+    grid-column: 1 / 6;
+    grid-row: 1;
+    font-size: 25px;
+    color: #e3e3e3;
+    padding: 1rem;
+  }
+
+  .intro-container p {
+    grid-column: 4 / 10;
+    grid-row: 2 / 5;
+    font-size: 20px;
+    padding: 1rem;
+  }
+
+  .socials {
+    grid-column: 10 / 12;
+    grid-row: 5;
+    justify-self: end;
+  }
+}
+
