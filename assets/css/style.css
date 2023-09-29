@@ -293,7 +293,7 @@ li {
 .card img {
   width: 100%;
   scale: 1.1;
-  
+
   border-radius: inherit;
   filter: grayscale(1);
 }
@@ -314,7 +314,6 @@ li {
   max-width: 50%;
   padding-bottom: 1rem;
 }
-
 
 input,
 textarea,
@@ -357,8 +356,6 @@ button:hover {
 
 /* test */
 
-
-
 @media (max-width: 375px) {
   #particles-js {
     display: none;
@@ -384,9 +381,10 @@ button:hover {
     padding: 2rem;
   }
 
-  .nav img {
-    display: none;
+  .logo-nav img {
+    z-index: 999;
   }
+
   /* Nav container End */
 
   /* Intro Start */
@@ -424,7 +422,7 @@ button:hover {
   }
 
   .about-me-wrapper {
-    padding: 1rem
+    padding: 1rem;
   }
   .about-me-wrapper h2 {
     font-size: var(--mobile-font-size-h);
@@ -454,7 +452,7 @@ button:hover {
   }
 
   .tech-heading {
-    flex-basis: 100%
+    flex-basis: 100%;
   }
   /* Tech Stack end */
 
@@ -462,6 +460,13 @@ button:hover {
 
   .card-container {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+
+  #particles-js {
+    display: none;
   }
 
 }
