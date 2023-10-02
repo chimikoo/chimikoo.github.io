@@ -14,12 +14,14 @@
   --pad-font-size-p: 20px;
   --scrollbar-color: #02b588;
   --scrollbar-hover: #08ce9c;
-  --scrollbar-bg: #535353;
+  --scrollbar-bg: #2f333b;
 }
 
 html {
   scroll-behavior: smooth;
 }
+
+/* scrollbar start */
 
 ::-webkit-scrollbar {
   width: 0.75rem;
@@ -36,6 +38,7 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--scrollbar-hover);
 }
+/* scrollbar end */
 
 #backToTop {
   position: fixed;
