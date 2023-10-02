@@ -14,6 +14,10 @@
   --pad-font-size-p: 20px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
