@@ -9,6 +9,7 @@
   --border-color: #8b8b8b;
   --mobile-font-size-h: 24px;
   --mobile-font-size-p: 18px;
+  --mobile-font-size-f: 14px;
   --pad-font-size-h: 24px;
   --pad-font-size-p: 20px;
 }
@@ -337,7 +338,7 @@ li {
   flex-direction: column;
   margin: 0 auto;
   max-width: 50%;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 
 input,
@@ -514,7 +515,9 @@ button:hover {
   /* Tech Stack end */
 
   /* Project Start */
-
+.foot-container h4 {
+  font-size: var(--mobile-font-size-f);
+}
 }
 
 @media only screen and (max-width: 1000px) and (min-width: 701px) {
