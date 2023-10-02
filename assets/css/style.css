@@ -18,6 +18,16 @@ html {
   scroll-behavior: smooth;
 }
 
+#backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  content: '\f35b';
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
