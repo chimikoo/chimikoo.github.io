@@ -28,7 +28,7 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--scrollbar-bg)
+  background: var(--scrollbar-bg);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -42,8 +42,8 @@ html {
 
 #backToTop {
   position: fixed;
-  bottom: 2rem;
-  right: 2rem;
+  bottom: .75rem;
+  right: .75rem;
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
@@ -102,21 +102,19 @@ span {
 
 /* Hover effect start */
 
-
 a {
   text-decoration: none;
-  transition: .25s ease;
+  transition: 0.25s ease;
 }
 
 ul:hover a {
-  color: rgba(2,181,136,0.4)
+  color: rgba(2, 181, 136, 0.4);
 }
 
 .nav-container ul:hover a:hover {
   color: var(--text-highlight);
   box-shadow: 0 2px 0 0 currentcolor;
 }
-
 
 /* Hover effect end */
 
@@ -358,7 +356,7 @@ li {
 .card img {
   width: 100%;
   scale: 1.1;
-  
+
   border-radius: inherit;
   filter: grayscale(1);
 }
@@ -442,8 +440,6 @@ button:hover {
   border-right: 2px solid #02b588;
   padding: 0 2rem 0 2rem;
 }
-
-
 
 @media only screen and (max-width: 700px) {
   #particles-js {
@@ -540,7 +536,7 @@ button:hover {
   .tech-list h2 {
     font-size: var(--mobile-font-size-h);
   }
-  
+
   .tech {
     flex-basis: 40%;
     box-sizing: border-box;
@@ -556,15 +552,20 @@ button:hover {
   }
   /* Tech Stack end */
 
-.foot-container h4 {
-  font-size: var(--mobile-font-size-f);
-}
+  .foot-container h4 {
+    font-size: var(--mobile-font-size-f);
+  }
 
-.contact-form {
-  max-width: 100%;
-  padding-left: 2rem;
-  padding-right: 2rem
-}
+  .contact-form {
+    max-width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  #backToTop {
+    width: 3rem;
+    height: 3rem;
+  }
 }
 
 @media only screen and (max-width: 1000px) and (min-width: 701px) {
@@ -604,10 +605,8 @@ button:hover {
 
   .placement {
     flex-direction: column;
-  } 
-    
+  }
 }
-
 
 @media only screen and (max-width: 1575px) and (min-width: 1001px) {
   #particles-js {
