@@ -425,6 +425,8 @@ button:hover {
   background: var(--bg-b);
   width: 100%;
   height: 4rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .foot-container {
   display: flex;
@@ -553,9 +555,12 @@ button:hover {
   }
   /* Tech Stack end */
 
-  /* Project Start */
 .foot-container h4 {
   font-size: var(--mobile-font-size-f);
+}
+
+.contact-form {
+  max-width: 80%;
 }
 }
 
