@@ -379,7 +379,27 @@ button:hover {
 
 /* Contact end */
 
-/* test */
+/* footer */
+
+.footer {
+  background: var(--bg-b);
+  width: 100%;
+  height: 4rem;
+}
+.foot-container {
+  display: flex;
+  height: 100%;
+  gap: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-highlight);
+}
+
+.border-fun {
+  border-left: 2px solid #02b588;
+  border-right: 2px solid #02b588;
+  padding: 0 2rem 0 2rem;
+}
 
 
 
@@ -519,9 +539,13 @@ button:hover {
   }
 
   .socials {
-    grid-column: 10 / 13;
+    grid-column: 2 / 8;
     grid-row: 4;
-    justify-self: end;
+    padding-left: 1rem;
+  }
+
+  .social-icons {
+    justify-content: space-between;
   }
 
   .tech-list {
