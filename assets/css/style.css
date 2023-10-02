@@ -48,26 +48,44 @@ span {
 
 /* nav start */
 
-.nav {
-  position: fixed;
+.nav-container {
   width: 100%;
   background-color: rgba(20, 22, 27, 0.5);
   /*   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.5); */
   z-index: 1;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  padding-right: 5rem;
+  padding-left: 3rem;
   text-transform: uppercase;
-}
-
-.logo-nav img {
-  width: 50px;
-}
-
-.nav-container {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+/* Hover effect start */
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: .25s ease;
+}
+
+ul:hover a {
+  color: rgba(2,181,136,0.4)
+}
+
+.nav-container ul:hover a:hover {
+  color: var(--text-highlight);
+  box-shadow: 0 2px 0 0 currentcolor;
+}
+
+
+/* Hover effect end */
+
+.logo-nav img {
+  width: 50px;
 }
 
 ul {
@@ -75,7 +93,7 @@ ul {
   gap: 2rem;
 }
 
-.nav a {
+.nav-container a {
   text-decoration: none;
   color: var(--text-highlight);
   font-weight: bold;
@@ -143,6 +161,14 @@ li {
   color: var(--text-highlight);
 }
 
+/* icon effect */
+
+.socials ul:hover a:hover {
+  color: var(--text-highlight);
+}
+
+/* icon effect */
+
 .about h2 {
   text-align: center;
   width: 5rem;
@@ -183,7 +209,7 @@ li {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  margin: 0 0 5rem 0;
+  margin: 0 5rem 5rem 5rem;
   gap: 2.5rem;
 }
 
@@ -284,16 +310,16 @@ li {
 
 .card {
   width: 20rem;
-  border: 0.25rem solid rgb(255 255 255 / 15%);
   border-radius: 1rem;
   cursor: pointer;
   overflow: hidden;
+  border: 0.25rem solid rgb(255 255 255 / 15%);
 }
 
 .card img {
   width: 100%;
   scale: 1.1;
-
+  
   border-radius: inherit;
   filter: grayscale(1);
 }
@@ -466,10 +492,6 @@ button:hover {
 
   /* Project Start */
 
-  .card-container {
-    flex-direction: column;
-  }
-
 }
 
 @media only screen and (max-width: 1000px) and (min-width: 701px) {
@@ -502,6 +524,11 @@ button:hover {
   .tech-list {
     justify-content: center;
   }
+
+  .placement {
+    flex-direction: column;
+  } 
+    
 }
 
 
