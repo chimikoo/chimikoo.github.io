@@ -21,7 +21,6 @@ const backToTopButton = document.getElementById("backToTop")
 backToTopButton.onclick = () =>
   document.documentElement.scroll({
     top: 0,
-    behavior: "smooth"
   });
 
 window.onscroll = () => {

@@ -20,12 +20,12 @@ html {
 
 #backToTop {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 2rem;
-  height: 2rem;
+  bottom: 2rem;
+  right: 2rem;
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
-  content: '\f35b';
+  z-index: 99999;
 }
 
 * {
