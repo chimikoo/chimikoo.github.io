@@ -516,7 +516,8 @@ button:hover {
   }
 
   .about-me-wrapper {
-    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
   .about-me-wrapper h2 {
     font-size: var(--mobile-font-size-h);
@@ -560,7 +561,9 @@ button:hover {
 }
 
 .contact-form {
-  max-width: 80%;
+  max-width: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem
 }
 }
 
