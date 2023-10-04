@@ -1,7 +1,11 @@
 /* /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-particlesJS.load("particles-js", "assets/script/particlesjs-config.json", function () {
-  console.log("callback - particles.js config loaded");
-});
+particlesJS.load(
+  "particles-js",
+  "assets/script/particlesjs-config.json",
+  function () {
+    console.log("callback - particles.js config loaded");
+  }
+);
 
 /* Hover effect */
 const socialIcons = document.querySelectorAll(".social-icons i");
@@ -16,7 +20,8 @@ socialIcons.forEach((icon) => {
   });
 });
 
-const backToTopButton = document.getElementById("backToTop")
+/* Scrolling home logic */
+const backToTopButton = document.getElementById("backToTop");
 
 backToTopButton.onclick = () =>
   document.documentElement.scroll({
@@ -25,9 +30,8 @@ backToTopButton.onclick = () =>
 
 window.onscroll = () => {
   if (document.documentElement.scrollTop > 200) {
-    backToTopButton.hidden = false;
+    backToTopButton.removeAttribute("hidden");
   } else {
-    backToTopButton.hidden = true;
+    backToTopButton.setAttribute("hidden", "");
   }
 };
-
